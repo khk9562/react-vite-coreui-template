@@ -1,15 +1,6 @@
 import React from 'react'
-import {
-  CButton,
-  CCol,
-  CContainer,
-  CFormInput,
-  CInputGroup,
-  CInputGroupText,
-  CRow,
-} from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import { cilMagnifyingGlass } from '@coreui/icons'
+import { NavLink } from 'react-router-dom'
+import { CButton, CCol, CContainer, CNavLink, CRow } from '@coreui/react'
 
 const Page500 = () => {
   return (
@@ -19,18 +10,20 @@ const Page500 = () => {
           <CCol md={6}>
             <span className="clearfix">
               <h1 className="float-start display-3 me-4">500</h1>
-              <h4 className="pt-3">Houston, we have a problem!</h4>
+              <h4 className="pt-3">{`알 수 없는 에러가 발생하였습니다 :(`}</h4>
               <p className="text-body-secondary float-start">
-                The page you are looking for is temporarily unavailable.
+                일시적으로 현재 페이지를 찾을 수 없습니다.
               </p>
             </span>
-            <CInputGroup className="input-prepend">
-              <CInputGroupText>
-                <CIcon icon={cilMagnifyingGlass} />
-              </CInputGroupText>
-              <CFormInput type="text" placeholder="What are you looking for?" />
-              <CButton color="info">Search</CButton>
-            </CInputGroup>
+          </CCol>
+        </CRow>
+        <CRow className="justify-content-center text-center">
+          <CCol md={'auto'}>
+            <CButton color="dark">
+              <CNavLink to="/home" as={NavLink}>
+                홈으로 가기
+              </CNavLink>
+            </CButton>
           </CCol>
         </CRow>
       </CContainer>
