@@ -1,26 +1,13 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import {
-  cilBell,
-  cilCalculator,
-  cilChartPie,
-  cilCursor,
-  cilDescription,
-  cilDrop,
-  cilNotes,
-  cilPencil,
-  cilPuzzle,
-  cilSpeedometer,
-  cilStar,
-  cilHome,
-} from '@coreui/icons'
+import { cilSpeedometer, cilStar, cilHome } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
   {
     component: CNavItem,
     name: 'Home',
-    to: '/home',
+    to: '/',
     icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
   },
   {
@@ -60,12 +47,6 @@ const _nav = [
         to: '/500',
       },
     ],
-  },
-  {
-    component: CNavItem,
-    name: 'Docs',
-    href: 'https://coreui.io/react/docs/templates/installation/',
-    icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
 ]
 

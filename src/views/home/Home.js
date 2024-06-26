@@ -42,28 +42,16 @@ import {
   cilUserFemale,
 } from '@coreui/icons'
 
-import WidgetsDropdown from '../widgets/WidgetsDropdown'
-import MainChart from '../dashboard/MainChart'
-
 const Home = () => {
   return (
     <>
-      <MainChart />
-      <WidgetsDropdown className="mb-4" />
-      <CRow>
-        <CCol>
-          <main
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100vh',
-            }}
-          >
-            <h1>이게 홈</h1>
-          </main>
-        </CCol>
-      </CRow>
+      <main>
+        <CRow>
+          <CCol>
+            <h1>Admin Home</h1>
+          </CCol>
+        </CRow>
+      </main>
     </>
   )
 }

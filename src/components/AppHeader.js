@@ -57,11 +57,11 @@ const AppHeader = () => {
               홈
             </CNavLink>
           </CNavItem>
-          <CNavItem>
+          {/* <CNavItem>
             <CNavLink to="/dashboard" as={NavLink}>
               대시보드
             </CNavLink>
-          </CNavItem>
+          </CNavItem> */}
           <CNavItem>
             <CNavLink href="#">메인 슬라이드</CNavLink>
           </CNavItem>

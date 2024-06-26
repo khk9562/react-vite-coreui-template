@@ -10,7 +10,7 @@ const Page404 = () => {
           <CCol md={6}>
             <div className="clearfix">
               <h1 className="float-start display-3 me-4">404</h1>
-              <h4 className="pt-3">Oops! You{"'"}re lost.</h4>
+              <h4 className="pt-3">죄송합니다.</h4>
               <p className="text-body-secondary float-start">페이지를 찾을 수 없습니다.</p>
             </div>
           </CCol>
