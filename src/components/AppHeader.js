@@ -53,17 +53,27 @@ const AppHeader = () => {
         </CHeaderToggler>
         <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
-            <CNavLink to="/dashboard" as={NavLink}>
-              Dashboard
+            <CNavLink to="/home" as={NavLink}>
+              홈
             </CNavLink>
           </CNavItem>
+          {/* <CNavItem>
+            <CNavLink to="/dashboard" as={NavLink}>
+              대시보드
+            </CNavLink>
+          </CNavItem> */}
           <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
+            <CNavLink href="#">메인 슬라이드</CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
+            <CNavLink href="#">공지사항</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="#">이벤트</CNavLink>
           </CNavItem>
         </CHeaderNav>
+
+        {/* 상단 우측 헤더 네비 */}
         <CHeaderNav className="ms-auto">
           <CNavItem>
             <CNavLink href="#">
@@ -131,9 +141,10 @@ const AppHeader = () => {
           <AppHeaderDropdown />
         </CHeaderNav>
       </CContainer>
-      <CContainer className="px-4" fluid>
+      {/* 페이지 경로 표시 */}
+      {/* <CContainer className="px-4" fluid>
         <AppBreadcrumb />
-      </CContainer>
+      </CContainer> */}
     </CHeader>
   )
 }

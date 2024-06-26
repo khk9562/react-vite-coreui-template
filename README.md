@@ -1,9 +1,10 @@
+## React-Vite-CoreUI-Admin Template
+
 [![Bootstrap Admin Template](https://assets.coreui.io/products/coreui-free-bootstrap-admin-template-light-dark.webp)](https://coreui.io/product/free-react-admin-template/)
 
 ### Basic usage
 
 ```bash
-# dev server with hot reload at http://localhost:3000
 $ npm start
 ```
 
