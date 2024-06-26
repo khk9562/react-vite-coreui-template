@@ -25,7 +25,9 @@ const Login = () => {
             <CCard className="p-4">
               <CCardBody>
                 <CForm>
-                  <h1>로그인</h1>
+                  <CRow className="mb-2">
+                    <h1>로그인</h1>
+                  </CRow>
                   <CInputGroup className="mb-3">
                     <CInputGroupText>
                       <CIcon icon={cilUser} />
@@ -43,7 +45,7 @@ const Login = () => {
                     />
                   </CInputGroup>
                   <CRow>
-                    <CCol className="text-center">
+                    <CCol className="d-grid">
                       <CButton color="primary" className="px-5 mb-2">
                         확인
                       </CButton>
