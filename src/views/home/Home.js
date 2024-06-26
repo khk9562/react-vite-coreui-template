@@ -48,11 +48,20 @@ const Home = () => {
   return (
     <>
       <WidgetsDropdown className="mb-4" />
-      <main
-        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}
-      >
-        <h1>이게 홈</h1>
-      </main>
+      <CRow>
+        <CCol>
+          <main
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100vh',
+            }}
+          >
+            <h1>이게 홈</h1>
+          </main>
+        </CCol>
+      </CRow>
     </>
   )
 }

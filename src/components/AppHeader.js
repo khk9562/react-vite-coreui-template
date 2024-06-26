@@ -72,6 +72,8 @@ const AppHeader = () => {
             <CNavLink href="#">이벤트</CNavLink>
           </CNavItem>
         </CHeaderNav>
+
+        {/* 상단 우측 헤더 네비 */}
         <CHeaderNav className="ms-auto">
           <CNavItem>
             <CNavLink href="#">
