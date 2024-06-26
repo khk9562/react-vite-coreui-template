@@ -43,10 +43,12 @@ import {
 } from '@coreui/icons'
 
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
+import MainChart from '../dashboard/MainChart'
 
 const Home = () => {
   return (
     <>
+      <MainChart />
       <WidgetsDropdown className="mb-4" />
       <CRow>
         <CCol>
