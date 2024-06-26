@@ -1,15 +1,6 @@
 import React from 'react'
-import {
-  CButton,
-  CCol,
-  CContainer,
-  CFormInput,
-  CInputGroup,
-  CInputGroupText,
-  CRow,
-} from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import { cilMagnifyingGlass } from '@coreui/icons'
+import { NavLink } from 'react-router-dom'
+import { CButton, CCol, CContainer, CNavLink, CRow } from '@coreui/react'
 
 const Page404 = () => {
   return (
@@ -20,17 +11,17 @@ const Page404 = () => {
             <div className="clearfix">
               <h1 className="float-start display-3 me-4">404</h1>
               <h4 className="pt-3">Oops! You{"'"}re lost.</h4>
-              <p className="text-body-secondary float-start">
-                The page you are looking for was not found.
-              </p>
+              <p className="text-body-secondary float-start">페이지를 찾을 수 없습니다.</p>
             </div>
-            <CInputGroup className="input-prepend">
-              <CInputGroupText>
-                <CIcon icon={cilMagnifyingGlass} />
-              </CInputGroupText>
-              <CFormInput type="text" placeholder="What are you looking for?" />
-              <CButton color="info">Search</CButton>
-            </CInputGroup>
+          </CCol>
+        </CRow>
+        <CRow className="justify-content-center text-center">
+          <CCol md={'auto'}>
+            <CButton color="dark">
+              <CNavLink to="/home" as={NavLink}>
+                홈으로 가기
+              </CNavLink>
+            </CButton>
           </CCol>
         </CRow>
       </CContainer>

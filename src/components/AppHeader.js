@@ -53,15 +53,23 @@ const AppHeader = () => {
         </CHeaderToggler>
         <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
-            <CNavLink to="/dashboard" as={NavLink}>
-              Dashboard
+            <CNavLink to="/home" as={NavLink}>
+              홈
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
+            <CNavLink to="/dashboard" as={NavLink}>
+              대시보드
+            </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
+            <CNavLink href="#">메인 슬라이드</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="#">공지사항</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="#">이벤트</CNavLink>
           </CNavItem>
         </CHeaderNav>
         <CHeaderNav className="ms-auto">
